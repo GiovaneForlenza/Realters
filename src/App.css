@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-main-orange-50: #fff2e6;
+  --color-main-orange-100: #ffe0cc;
+  --color-main-orange-200: #ffc299;
+  --color-main-orange-300: #ffa366;
+  --color-main-orange-400: #ff8033;
+  --color-main-orange-500: #ff4d00;
+  --color-main-orange-600: #e64500;
+  --color-main-orange-700: #cc3d00;
+  --color-main-orange-800: #a63100;
+  --color-main-orange-900: #802600;
+  --color-main-orange-950: #4d1700;
+
+  --color-greeen: #6ec172;
+}
+
+.btn-main {
+  background-color: var(--color-main-orange-200);
+  padding: 4px 4px 4px 16px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #4d1700;
+}
+.btn-main .icon {
+  color: var(--color-main-orange-200);
+  padding: 6px;
+  border-radius: 100%;
+  background-color: var(--color-main-orange-800);
+  transition: all 0.2s;
+}
+.btn-main:hover {
+  background-color: var(--color-main-orange-300);
+}
+.btn-main:hover .icon {
+  color: var(--color-main-orange-300);
+}
+
+.container {
+  max-width: 1440px;
+  outline: 1px solid #0f0;
+}
