@@ -17,29 +17,29 @@
 }
 
 .btn-main {
-  background-color: var(--color-main-orange-200);
-  padding: 4px 4px 4px 16px;
+  background-color: var(--color-main-orange-100);
+  padding: 4px 6px 4px 16px;
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 12px;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.4s;
   color: #4d1700;
 }
 .btn-main .icon {
-  color: var(--color-main-orange-200);
+  color: var(--color-main-orange-100);
   padding: 6px;
   border-radius: 100%;
   background-color: var(--color-main-orange-800);
   transition: all 0.2s;
 }
 .btn-main:hover {
-  background-color: var(--color-main-orange-300);
+  background-color: var(--color-main-orange-200);
 }
 .btn-main:hover .icon {
-  color: var(--color-main-orange-300);
+  color: var(--color-main-orange-200);
 }
 
 .container {
