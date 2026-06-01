@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import "../../public/logo-icon.png";
-import { MoveUpRight } from "lucide-react";
 import NavbarMenuItems from "./NavbarMenuItems";
 import { useNavigate } from "react-router-dom";
+import MainButton from "./button/MainButton";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -28,8 +27,8 @@ function Navbar() {
             }
           }}
         />
-        <div className="flex flex-row gap-8">
-          <ul className="flex flex-row items-center gap-8">
+        <div className="flex flex-row gap-2">
+          <ul className="flex flex-row items-center gap-1">
             {menuItems.map((item, idx) => {
               return (
                 <NavbarMenuItems
@@ -42,12 +41,7 @@ function Navbar() {
               );
             })}
           </ul>
-          <div className="btn-main">
-            <div className="">Invest with us</div>
-            <div className="icon bg-">
-              <MoveUpRight strokeWidth={1.5} />
-            </div>
-          </div>
+          <MainButton />
         </div>
       </div>
     </div>

@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import HomeHero from "../components/HomeHero";
 
 function Home() {
   return (
-    <div className='container h-[3000px]'>
-      Home
+    <div className="h-750 bg-red-50">
+      <HomeHero />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

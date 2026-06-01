@@ -22,11 +22,12 @@
   border-radius: 50px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 12px;
   cursor: pointer;
   transition: all 0.4s;
   color: #4d1700;
+  width: 200px;
 }
 .btn-main .icon {
   color: var(--color-main-orange-100);
@@ -43,6 +44,6 @@
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1110px;
   outline: 1px solid #0f0;
 }
