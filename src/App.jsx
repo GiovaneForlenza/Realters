@@ -7,11 +7,13 @@ import Careers from "./pages/Careers";
 import Home from "./pages/Home";
 import Investors from "./pages/Investors";
 import Portfolio from "./pages/Portfolio";
+import SizeIndicator from "./components/SizeIndicator";
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center border border-red-500">
+    <div className="flex flex-col items-center justify-center">
       <Navbar />
+      <SizeIndicator />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

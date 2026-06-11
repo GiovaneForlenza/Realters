@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Investors() {
-  return (
-    <div>Investors</div>
-  )
+  return <div className="page">Investors</div>;
 }
 
-export default Investors
+export default Investors;
