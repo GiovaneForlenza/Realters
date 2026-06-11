@@ -28,7 +28,7 @@ function Navbar() {
   }
   return (
     <div className="sticky top-0 left-0 w-full bg-yellow-300 sm:bg-green-300 md:bg-pink-300 lg:bg-white">
-      <div className="container mx-auto flex flex-wrap items-center justify-center px-4 py-6 sm:justify-between">
+      <div className="container mx-auto flex flex-wrap items-center justify-center gap-6 px-4 py-6 sm:justify-between">
         <img
           src="/logo-written.png"
           alt="Company logo"
