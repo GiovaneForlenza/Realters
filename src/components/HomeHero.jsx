@@ -3,7 +3,7 @@ import MainButton from "./button/MainButton";
 
 function HomeHero() {
   return (
-    <div className="flex h-100 w-screen items-center justify-center bg-blue-500">
+    <div className="flex w-screen items-center justify-center bg-blue-500 px-6 py-6 md:h-100">
       <div className="flex w-full max-w-175 flex-col items-end justify-end gap-8 border text-center">
         <h1 className="text-5xl font-bold text-white">
           Experience Matters in Real Estate Investments

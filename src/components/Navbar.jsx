@@ -41,7 +41,7 @@ function Navbar() {
           }}
         />
         <div className="flex flex-row items-center gap-2">
-          <div className="mr-1 ml-8 flex sm:mr-4 md:hidden">
+          <div className="mr-1 ml-8 flex cursor-pointer sm:mr-4 md:hidden">
             {isResponsiveMenuOpen ? (
               <X onClick={handleClick} />
             ) : (
@@ -65,7 +65,7 @@ function Navbar() {
         </div>
       </div>
       <div
-        className={`${isResponsiveMenuOpen ? "h-fit" : "h-0"} flex flex-col items-center gap-2 overflow-hidden md:hidden`}
+        className={`${isResponsiveMenuOpen ? "h-fit" : "h-0"} flex flex-col items-center gap-2 overflow-hidden pb-2 md:hidden`}
       >
         <ul className="flex flex-col items-center">
           {menuItems.map((item, idx) => {
