@@ -5,7 +5,7 @@ function MainButton() {
   return (
     <div className="btn-main">
       <div className="">Invest with us</div>
-      <div className="icon bg-">
+      <div className="icon">
         <MoveUpRight strokeWidth={1.5} />
       </div>
     </div>

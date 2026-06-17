@@ -1,4 +1,4 @@
-import { MenuIcon, X } from "lucide-react";
+import { MenuIcon, MoveUpRight, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import MainButton from "./button/MainButton";
@@ -27,8 +27,8 @@ function Navbar() {
     setIsResponsiveMenuOpen(!isResponsiveMenuOpen);
   }
   return (
-    <div className="sticky top-0 left-0 w-full bg-yellow-300 sm:bg-green-300 md:bg-pink-300 lg:bg-white">
-      <div className="container mx-auto flex flex-wrap items-center justify-center gap-6 px-4 py-6 sm:justify-between">
+    <div className="top-0 left-0 w-full bg-yellow-300 sm:bg-green-300 md:sticky md:bg-pink-300 lg:bg-white">
+      <div className="wrapper mx-auto flex items-center justify-between gap-6 px-6 py-6">
         <img
           src="/logo-written.png"
           alt="Company logo"
@@ -41,7 +41,7 @@ function Navbar() {
           }}
         />
         <div className="flex flex-row items-center gap-2">
-          <div className="mr-1 ml-8 flex cursor-pointer sm:mr-4 md:hidden">
+          <div className="flex cursor-pointer sm:mr-4 md:hidden">
             {isResponsiveMenuOpen ? (
               <X onClick={handleClick} />
             ) : (
@@ -61,13 +61,16 @@ function Navbar() {
               );
             })}
           </ul>
-          <MainButton />
+          <div className="hidden md:inline">
+            <MainButton />
+          </div>
         </div>
       </div>
+
       <div
-        className={`${isResponsiveMenuOpen ? "h-fit" : "h-0"} flex flex-col items-center gap-2 overflow-hidden pb-2 md:hidden`}
+        className={`${isResponsiveMenuOpen ? "h-fit" : "h-0"} flex flex-col items-center gap-2 overflow-hidden md:hidden`}
       >
-        <ul className="flex flex-col items-center">
+        <ul className="mb-4 flex flex-col items-center">
           {menuItems.map((item, idx) => {
             return (
               <NavbarMenuItems
@@ -82,6 +85,12 @@ function Navbar() {
             );
           })}
         </ul>
+      </div>
+      <div className="bg-main-orange-100 border-main-orange-900 flex cursor-pointer items-center justify-center gap-4 border border-r-0 border-l-0 py-2 md:hidden">
+        <div className="">Invest with us</div>
+        <div className="text-main-orange-100 bg-main-orange-800 rounded-full p-1 transition-all">
+          <MoveUpRight strokeWidth={1.5} />
+        </div>
       </div>
     </div>
   );

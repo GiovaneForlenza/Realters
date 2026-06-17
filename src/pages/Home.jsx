@@ -1,10 +1,17 @@
-import React from "react";
-import HomeHero from "../components/HomeHero";
+import HomeHero from "../components/home page/HomeHero";
+import OurStory from "../components/home page/OurStory";
+import WhoWeAre from "../components/home page/WhoWeAre";
+import InvestmentCards from "../components/InvestmentCards";
+import LineDivider from "../components/LineDivider";
 
 function Home() {
   return (
-    <div className="h-750 bg-red-50">
+    <div className="flex flex-col gap-8 md:gap-16">
       <HomeHero />
+      <WhoWeAre />
+      <LineDivider />
+      <InvestmentCards />
+      <OurStory />
     </div>
   );
 }

@@ -11,7 +11,7 @@ import SizeIndicator from "./components/SizeIndicator";
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center overflow-hidden">
       <Navbar />
       <SizeIndicator />
       <Routes>
